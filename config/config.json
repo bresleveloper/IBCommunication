@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "back-button-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/backButton/BackButtonWebPart.js",
+          "manifest": "./src/webparts/backButton/BackButtonWebPart.manifest.json"
+        }
+      ]
+    },
+    "get-item-col-value-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/getItemColValue/GetItemColValueWebPart.js",
+          "manifest": "./src/webparts/getItemColValue/GetItemColValueWebPart.manifest.json"
+        }
+      ]
+    },
+    "get-list-with-cbx-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/getListWithCbx/GetListWithCbxWebPart.js",
+          "manifest": "./src/webparts/getListWithCbx/GetListWithCbxWebPart.manifest.json"
+        }
+      ]
+    },
+    "original-example-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/originalExample/OriginalExampleWebPart.js",
+          "manifest": "./src/webparts/originalExample/OriginalExampleWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "BackButtonWebPartStrings": "lib/webparts/backButton/loc/{locale}.js",
+    "GetItemColValueWebPartStrings": "lib/webparts/getItemColValue/loc/{locale}.js",
+    "GetListWithCbxWebPartStrings": "lib/webparts/getListWithCbx/loc/{locale}.js",
+    "OriginalExampleWebPartStrings": "lib/webparts/originalExample/loc/{locale}.js"
+  }
+}
